@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin
 
 import json
 
@@ -8,4 +8,6 @@ with open('data/schacon.repos.json', 'r') as file:
 csv_file = 'chacon.csv'
 
 for r in data[0:5]:
-    print(r['name'], r['html_url'], r['updated_at'], r['visibility'])
+    data2 = (r['name'], r['html_url'], r['updated_at'], r['visibility'])
+    data4 = ','.join(data2)
+    print(data4)
