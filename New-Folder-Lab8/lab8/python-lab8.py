@@ -14,5 +14,5 @@ for r in data[0:5]:
     file1.write(data4 + '\n')
     file1.close()
 
-f = open("chacon.csv", "r")
-print(f.read())
+final_csv = open("chacon.csv", "r")
+print(final_csv.read())
